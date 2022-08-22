@@ -1,4 +1,3 @@
-from http.client import HTTPResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from store.models import Product, Variation
 from .models import Cart, CartItem
