@@ -116,9 +116,9 @@ def login(request):
                 if 'next' in params:
                     nextPage = params['next']
                     return redirect(nextPage)
-                return redirect('dashboard')
+
             except:
-                pass
+                return redirect('dashboard')
         else:
             messages.error(request, 'Invalid login credentials')
             return redirect('login')
@@ -299,5 +299,6 @@ def order_detail(request, order_id):
     context = {
         'order_detail': order_detail,
         'order': order,
+        'subtotal': subtotal,
     }
     return render(request, 'accounts/order_detail.html', context)

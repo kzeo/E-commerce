@@ -19,12 +19,12 @@
         <div class="card">
           <article class="filter-group">
             <header class="card-header">
-              <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+              <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
                 <i class="icon-control fa fa-chevron-down"></i>
                 <h6 class="title">Categories</h6>
               </a>
             </header>
-            <div class="filter-content collapse show" id="collapse_1" style="">
+            <div class="filter-content collapse show" id="collapse_1">
               <div class="card-body">
                 <ul class="list-menu">
                   <li>
@@ -48,7 +48,7 @@
                 <h6 class="title">Sizes</h6>
               </a>
             </header>
-            <div class="filter-content collapse show" id="collapse_4" style="">
+            <div class="filter-content collapse show" id="collapse_4">
               <div class="card-body">
                 <label class="checkbox-btn">
                   <input type="checkbox" />
@@ -82,7 +82,7 @@
                 <h6 class="title">Price range</h6>
               </a>
             </header>
-            <div class="filter-content collapse show" id="collapse_3" style="">
+            <div class="filter-content collapse show" id="collapse_3">
               <div class="card-body">
                 <div class="form-row">
                   <div class="form-group col-md-6">
@@ -192,7 +192,7 @@
             {% if products.has_next %}
             <li class="page-item"><a class="page-link" href="?page={{products.next_page_number}}">Next</a></li>
             {% else %}
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
             {% endif %}
           </ul>
           {% endif %}
